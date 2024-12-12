@@ -1,0 +1,119 @@
+.places {
+  max-width: 987px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  gap: 80px;
+}
+
+.place__content {
+max-width: 984px;
+display: grid;
+grid-template-columns: 460px 1fr;
+grid-template-rows: auto auto auto auto;
+width: 100%;
+margin: auto;
+column-gap: 40px;
+row-gap: 48px;
+grid-template-areas:
+"title artist"
+"image texto"
+"button texto";
+padding-bottom: 80px;
+}
+
+.place__content-titlte {
+  grid-area: title;
+  font-family: "Inter", sans-serif;
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 76px;
+  text-align: left;
+  color: #ffffff;
+  margin: 0;
+}
+
+.place__content-artistas {
+  grid-area: artist;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  text-underline-position: from-font;
+  color: #ffffff;
+  margin: 0;
+  align-self: end;
+}
+
+.place__content-artistas-title {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.52px;
+  letter-spacing: 0.12em;
+  text-align: left;
+  text-underline-position: from-font;
+  color: #aaaaaa;
+}
+
+.place__content-img {
+  grid-area: image;
+  width: 460px;
+  height: 460px;
+  box-shadow: 10px 10px 25px;
+  color: #000;
+}
+
+.place__content-paragraphs {
+  grid-area: texto;
+}
+
+.place__content-paragraph {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 29.34px;
+  text-align: left;
+  color: #ffffff;
+
+}
+
+
+.place__content-button {
+  grid-area: button;
+  width: 289px;
+  height: 48px;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 21.78px;
+  text-align: center;
+  text-decoration-skip-ink: none;
+  background: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
+  box-shadow: 5px 5px 10px #000;
+  grid-area: button;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.place__content-img:hover {
+  opacity: 0.5;
+}
+.place__content-button:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 120, 254, 0.25) 0%,
+    rgba(0, 58, 123, 0.25) 99.98%
+  );
+}
+
+@media screen and (min-width: 545px) and (max-width: 1024px) {
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 544px) {
+
+}
