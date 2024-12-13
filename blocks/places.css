@@ -1,20 +1,21 @@
-.places {
+.place {
   max-width: 984px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: auto;
   gap: 80px;
+  background-color: red;
 }
 
 @media screen and (min-width: 545px) and (max-width: 1024px) {
-  .places {
+  .place {
     max-width: 720px;
   }
 }
 
 @media screen and (min-width: 320px) and (max-width: 544px) {
-  .places {
+  .place {
     max-width: 320px;
   }
 }
