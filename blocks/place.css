@@ -5,7 +5,6 @@
   align-items: center;
   margin: auto;
   gap: 80px;
-  background-color: red;
 }
 
 .place__content {
@@ -114,6 +113,10 @@
 }
 
 @media screen and (min-width: 545px) and (max-width: 1024px) {
+  .place {
+    max-width: 720px;
+  }
+
   .place__content {
     grid-template-columns: 340px 1fr;
     max-width: 720px;
@@ -139,6 +142,10 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 544px) {
+  .place {
+    max-width: 320px;
+  }
+
   .place__content {
     display: flex;
     flex-direction: column;
